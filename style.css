@@ -238,3 +238,35 @@ header{
 .social-media i:hover{
     background-color: #ffbb77;
 }
+
+.sessao-header h1{
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: rgb(58, 57, 56);
+    border-bottom: solid 3px  #974b00 ;
+    margin-bottom: 1rem;
+}
+
+.sobre{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+.sobre p{
+    font-family: var(--font-secundary);
+    font-size: 2rem;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, .2);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.sessao-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
