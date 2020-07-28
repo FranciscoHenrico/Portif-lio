@@ -73,7 +73,7 @@
                           <h2>Casamentos</h2>
                           <h3>Fazemos a decoração de sua cerimônia</h3>
                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam voluptas explicabo necessitatibus dolore at, quas voluptatum magnam, et neque repudiandae molestiae dicta iusto labore blanditiis omnis eos voluptatem dolorum adipisci?</p>
-                          <button class="3">Saiba mais</button>
+                          <button class="btn">Saiba mais</button>
                     </div> 
                 </div>
                     <div class="card">
@@ -84,7 +84,7 @@
                             <h2>Podas com desenhos</h2>
                             <h3>Especialistas em poda</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat id sunt? Ex recusandae harum distinctio magnam aut laudantium adipisci esse excepturi sit. Libero tenetur repellendus, similique at corporis iure.</p>
-                            <button class="3">Saiba mais</button>
+                            <button class="btn">Saiba mais</button>
                             </div>
                      </div>
                     <div class="card">
@@ -95,12 +95,61 @@
                           <h2>Jardim</h2>
                           <h3>Cuidamos de seu jardim</h3>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis ipsum porro amet vel soluta dolore distinctio doloribus omnis voluptates velit, dolorem quae modi nisi odio voluptatum molestias. Totam, dignissimos.</p>
-                          <button class="3">Saiba mais</button>
+                          <button class="btn">Saiba mais</button>
                     </div>
                       </div>
                   </div>
               </div>
+            </section>
 
+            <section class="sessao-contato">
+                <div class="contato-wrapper">
+                    <div class="contato-left">
+
+                    </div>
+                    <div class="contato-right">
+                        <h1>Contato</h1>
+                        <form>
+                            <div class="input-group">
+                               <input type="text" class="field" id="nome">
+                                <label for="nome" class="field-label">Nome</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="field" id="email">
+                                <label for="email" class="field-label">E-mail</label>
+                            </div>
+                            <div class="input-group">
+                               <textarea class="field" id="mensagem"></textarea>
+                                <label for="mensagem" class="field-label">Mensagem</label>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sessao-orçamento">
+               <div class="orcamento-wrapper">
+                   <h1>Faça um orçamento</h1>
+                   <form>
+                    <label for="quantidade"> Quantidade de centos de flores </label>
+                    <input type="number" min="1" name="quantidade" id="quantidade">
+                    <label>Decorador</label>  
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="Decorador" id="Decorador-sim">
+                            <label for="Decorador-sim">Preciso de um decorador</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Decorador" id="Decorador-não">
+                            <label for="Decorador-não">Não preciso de um decorador</label>
+                        </div>
+                    </div>  
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                   </form>
+               </div>     
             </section>
     </div>
 
