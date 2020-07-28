@@ -15,6 +15,10 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburger{
     width: 2rem;
     height: 2rem;
@@ -27,6 +31,7 @@
     justify-content: space-evenly;
     cursor: pointer;
     transition: all 1s;
+    z-index: 170;
 }
 
 .show-menu .hamburger{
@@ -47,6 +52,7 @@ right: 17rem;
     transform: rotate(45deg) translate(.3rem, .45rem);
     background-color: rgb(151, 146, 146);
     box-shadow: none;
+    
 }
 
 .show-menu #line2{
@@ -58,6 +64,7 @@ right: 17rem;
     transform: rotate(-45deg) translate(.3rem, -.45rem);
     background-color: rgb(151, 146, 146);
     box-shadow: none;
+    
 }
 
 .hamburger span{
@@ -72,6 +79,7 @@ right: 17rem;
     color: #ffffff;
     font-family: var(--font-action);
     opacity: 0;
+    z-index: 170;
 }
 
 .hamburger span::before{
@@ -82,6 +90,7 @@ right: 17rem;
     border-left: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
     left: -1rem;
+    z-index: 170;
 }
 
 .show-menu .hamburger:hover span{
@@ -185,6 +194,8 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
+    
 }
 
 .show-menu .sidebar{
@@ -519,4 +530,52 @@ header{
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #201f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 2rem;
+    background: #11998e; 
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+    background: linear-gradient(to right, #38ef7d, #11998e);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 0 .1rem .6rem #00000009;
 }
